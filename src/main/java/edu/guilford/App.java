@@ -22,10 +22,14 @@ public class App extends Application {
         // Instantiate a VBox root node
         VBox root = new VBox();
         // Add a label to the root node
-        root.getChildren().add(new Label("Hello World!"));
+        // root.getChildren().add(new Label("Hello World!"));
+
+        //Instantiate a default Individual object
+        Individual individual = new Individual();
+
         // Instantiate an IndividualPane object and add it to the root node
-        root.getChildren().add(new IndividualPane());
-        scene = new Scene(root, 640, 480);
+        root.getChildren().add(new IndividualPane(individual));
+        scene = new Scene(root, 900, 550);
         stage.setScene(scene);
         stage.show();
     }
