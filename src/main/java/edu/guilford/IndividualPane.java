@@ -106,7 +106,7 @@ public class IndividualPane extends GridPane {
         //and a background color
         this.setStyle("-fx-background-color: lightblue");
 
-        //Add a listener for the button that changes the labels
+        //4 & 5 Add a listener for the button that changes the labels
         submitButton.setOnAction(e -> {
             //Set the name label to the name textfield
             nameLabel.setText("Name: " + nameField.getText());
